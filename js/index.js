@@ -41,7 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//only works for first 'a' tag
 let navServices = document.querySelector('nav a');
 navServices.textContent = siteContent['nav']['nav-item-1']
 navServices.style.color = 'green'
@@ -65,3 +64,20 @@ navAbout.style.color = 'green'
 let navContact = document.querySelector('a:nth-of-type(6)')
 navContact.textContent = siteContent['nav']['nav-item-6']
 navContact.style.color = 'green'
+
+//new nav item History
+const navHistory = document.createElement('a')
+navHistory.textContent = 'History'
+navHistory.href = '#'
+navHistory.style.color = 'green'
+document.querySelector('nav').appendChild(navHistory)
+
+//new nav item Home
+const navHome = document.createElement('a')
+navHome.textContent = 'Home'
+navHome.href = '#'
+navHome.style.color = 'green'
+document.querySelector('nav').prepend(navHome)
+
+
+
