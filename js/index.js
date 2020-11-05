@@ -44,18 +44,24 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //only works for first 'a' tag
 let navServices = document.querySelector('nav a');
 navServices.textContent = siteContent['nav']['nav-item-1']
+navServices.style.color = 'green'
 
 let navProduct = document.querySelector('a:nth-of-type(2)')
 navProduct.textContent = siteContent['nav']['nav-item-2']
+navProduct.style.color = 'green'
 
 let navVision = document.querySelector('a:nth-of-type(3)')
 navVision.textContent = siteContent['nav']['nav-item-3']
+navVision.style.color = 'green'
 
 let navFeatures = document.querySelector('a:nth-of-type(4)')
 navFeatures.textContent = siteContent['nav']['nav-item-4']
+navFeatures.style.color = 'green'
 
 let navAbout = document.querySelector('a:nth-of-type(5)')
 navAbout.textContent = siteContent['nav']['nav-item-5']
+navAbout.style.color = 'green'
 
 let navContact = document.querySelector('a:nth-of-type(6)')
 navContact.textContent = siteContent['nav']['nav-item-6']
+navContact.style.color = 'green'
