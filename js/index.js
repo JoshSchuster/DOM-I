@@ -79,5 +79,12 @@ navHome.href = '#'
 navHome.style.color = 'green'
 document.querySelector('nav').prepend(navHome)
 
+//updating h1
+document.querySelector('h1').textContent = siteContent['cta']['h1']
 
+//updating button
+document.querySelector('button').textContent = siteContent['cta']['button']
+
+//updating img of code snippet
+document.getElementById('cta-img').src = siteContent['cta']['img-src']
 
