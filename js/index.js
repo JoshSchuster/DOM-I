@@ -41,11 +41,21 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//only works for first 'a' tag
 let navServices = document.querySelector('nav a');
 navServices.textContent = siteContent['nav']['nav-item-1']
 
 let navProduct = document.querySelector('a:nth-of-type(2)')
 navProduct.textContent = siteContent['nav']['nav-item-2']
 
-//let navProduct = document.querySelector('nav a');
-//navProduct.textContent = siteContent['nav']['nav-item-2']
+let navVision = document.querySelector('a:nth-of-type(3)')
+navVision.textContent = siteContent['nav']['nav-item-3']
+
+let navFeatures = document.querySelector('a:nth-of-type(4)')
+navFeatures.textContent = siteContent['nav']['nav-item-4']
+
+let navAbout = document.querySelector('a:nth-of-type(5)')
+navAbout.textContent = siteContent['nav']['nav-item-5']
+
+let navContact = document.querySelector('a:nth-of-type(6)')
+navContact.textContent = siteContent['nav']['nav-item-6']
