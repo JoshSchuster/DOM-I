@@ -88,3 +88,9 @@ document.querySelector('button').textContent = siteContent['cta']['button']
 //updating img of code snippet
 document.getElementById('cta-img').src = siteContent['cta']['img-src']
 
+//updating features h4
+document.querySelector('h4:nth-of-type(1)').textContent = siteContent['main-content']['features-h4']
+
+//updating features p
+document.querySelector('p:nth-of-type(1)').textContent = siteContent['main-content']['features-content']
+
