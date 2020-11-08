@@ -123,3 +123,19 @@ h4NodeList[4].textContent = siteContent['main-content']['vision-h4']
 
 //update vision p
 pNodeList[4].textContent = siteContent['main-content']['vision-content']
+
+//update contact h4
+h4NodeList[5].textContent = siteContent['contact']['contact-h4']
+
+//update contact p address
+pNodeList[5].textContent = siteContent['contact']['address']
+
+//update contact p phone 
+pNodeList[6].textContent = siteContent['contact']['phone']
+
+//update contact p email
+pNodeList[7].textContent = siteContent['contact']['email']
+
+//update footer p 
+pNodeList[8].textContent = siteContent['footer']['copyright']
+
