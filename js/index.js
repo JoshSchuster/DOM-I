@@ -94,13 +94,32 @@ document.querySelector('h4:nth-of-type(1)').textContent = siteContent['main-cont
 //update features p
 document.querySelector('p:nth-of-type(1)').textContent = siteContent['main-content']['features-content']
 
-//update about h4 ?
-//document.querySelector('h4.top-content:nth-of-type(2)').textContent = siteContent['main-content']['about-h4']
+//update about h4 
+const h4NodeList = document.querySelectorAll('h4')
+h4NodeList[1].textContent = siteContent['main-content']['about-h4']
 
-//console.log(document.querySelector('div.text-content:nth-of-type(2).h4'))
-//update about p ?
-//document.querySelector('p:nth-of-type(2)').textContent = siteContent['main-content']['about-content']
+//update about p 
+const pNodeList = document.querySelectorAll('p')
+pNodeList[1].textContent = siteContent['main-content']['about-content']
 
 // Update the img src for the middle-img
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//update services h4
+h4NodeList[2].textContent = siteContent['main-content']['services-h4']
+
+//update services p
+pNodeList[2].textContent = siteContent['main-content']['services-content']
+
+//update product h4
+h4NodeList[3].textContent = siteContent['main-content']['product-h4']
+
+//update product p
+pNodeList[3].textContent = siteContent['main-content']['product-content']
+
+//update vision h4
+h4NodeList[4].textContent = siteContent['main-content']['vision-h4']
+
+//update vision p
+pNodeList[4].textContent = siteContent['main-content']['vision-content']
