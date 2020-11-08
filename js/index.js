@@ -79,18 +79,28 @@ navHome.href = '#'
 navHome.style.color = 'green'
 document.querySelector('nav').prepend(navHome)
 
-//updating h1
+//update h1
 document.querySelector('h1').textContent = siteContent['cta']['h1']
 
-//updating button
+//update button
 document.querySelector('button').textContent = siteContent['cta']['button']
 
-//updating img of code snippet
+//update img of code snippet
 document.getElementById('cta-img').src = siteContent['cta']['img-src']
 
-//updating features h4
+//update features h4
 document.querySelector('h4:nth-of-type(1)').textContent = siteContent['main-content']['features-h4']
 
-//updating features p
+//update features p
 document.querySelector('p:nth-of-type(1)').textContent = siteContent['main-content']['features-content']
 
+//update about h4 ?
+//document.querySelector('h4.top-content:nth-of-type(2)').textContent = siteContent['main-content']['about-h4']
+
+//console.log(document.querySelector('div.text-content:nth-of-type(2).h4'))
+//update about p ?
+//document.querySelector('p:nth-of-type(2)').textContent = siteContent['main-content']['about-content']
+
+// Update the img src for the middle-img
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
